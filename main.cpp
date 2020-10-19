@@ -1,9 +1,11 @@
 #include "Blockchain.h"
 
-int main()
+void main()
 {
+    //Constructor
     Blockchain bChain = Blockchain();
-
+    
+    //Adding block to chain and alert user
     cout << "Mining block 1..." << endl;
     bChain.AddBlock(Block(1, "Block 1 Data"));
 
@@ -12,6 +14,4 @@ int main()
 
     cout << "Mining block 3..." << endl;
     bChain.AddBlock(Block(3, "Block 3 Data"));
-
-    return 0;
 }
